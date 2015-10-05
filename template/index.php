@@ -20,7 +20,7 @@
 
 <header id="site-header">
     <div class="row">
-        <div class="large-12 columns  contain-to-grid">
+        <div class="large-12 columns">
             <nav class="top-bar" data-topbar>
                 <ul class="title-area">
                     <li class="name">

@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c2b48019-7e0e-44c4-b175-9e01cf0bcac2" name="Default" comment="fgrttj">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/captcha/img/1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/cat/27/15937__bYXExZeaAM.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/cat/27/24092849.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/cat/28/701__idprod.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/captcha/img/Andika-R.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/cat/28/Black-sun-coral-closeup.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/cat/28/ClassicRainbowWelso.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/cat/27/G10A6924.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/cat/28/Open+Brain+Coral.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/cat/27/Sinularia__gruen.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/cat/27/Weiche56.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/img/basket-put-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/img/bg.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/cat/27/coral__sinularia.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/img/delete.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/cat/26/kso-110(130)-i-fvr-m.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/cat/27/lobof.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/cat/27/lobophytum__sp__green__product__zoom__thumb.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/cat/27/p102.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/cat/28/pIMG00027-20110307-1752.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/examples/images/phpmailer.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/examples/images/phpmailer_mini.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/cat/28/pr7616430338__0b004088cc__z.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/cat/28/prs-Goniopora-sp-Green-Colony-1-Top1-800x600.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/cat/28/prst-41455.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/cat/28/tubastrea-micrantha-wild.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/examples/styles/wrapping.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.htaccess" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/.scrutinizer.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/401.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/403.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/404.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/docs/Callback_function_notes.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/docs/DomainKeys_notes.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/extras/EasyPeasyICS.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/docs/Note_for_SMTP_debugging.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/PHPMailerAutoload.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/extras/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/VERSION" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/examples/scripts/XRegExp.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/test/bootstrap.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/captcha/captcha.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/catalog.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/changelog.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/class.phpmailer.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/class.pop3.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/class.smtp.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/examples/code_generator.phps" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/composer.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/examples/contents.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/css/custom.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/db.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/examples/exceptions.phps" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/docs/extending.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/test/fakepopserver.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/test/fakesendmail.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/docs/faq.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/css/foundation.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/js/foundation.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/function.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/docs/generatedocs.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/examples/gmail.phps" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/extras/htmlfilter.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/examples/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/cart/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/cat/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/default/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/product/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/js/vendor/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/examples/mail.phps" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/examples/mailing_list.phps" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/js/vendor/modernizr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/extras/ntlm_sasl_client.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/cart/numProductUpd.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/cart/orderAdd.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/cart/orderDel.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/cart/orderSum.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/language/phpmailer.lang-ar.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/language/phpmailer.lang-az.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/language/phpmailer.lang-be.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/language/phpmailer.lang-br.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/language/phpmailer.lang-ca.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/language/phpmailer.lang-ch.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/language/phpmailer.lang-cz.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/language/phpmailer.lang-de.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/language/phpmailer.lang-dk.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/language/phpmailer.lang-el.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/language/phpmailer.lang-eo.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/language/phpmailer.lang-es.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/language/phpmailer.lang-et.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/language/phpmailer.lang-fa.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/language/phpmailer.lang-fi.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/language/phpmailer.lang-fo.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/language/phpmailer.lang-fr.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/language/phpmailer.lang-gl.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/language/phpmailer.lang-he.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/language/phpmailer.lang-hr.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/language/phpmailer.lang-hu.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/language/phpmailer.lang-id.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/language/phpmailer.lang-it.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/language/phpmailer.lang-ja.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/language/phpmailer.lang-ka.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/language/phpmailer.lang-lt.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/language/phpmailer.lang-lv.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/language/phpmailer.lang-nl.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/language/phpmailer.lang-no.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/language/phpmailer.lang-pl.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/language/phpmailer.lang-pt.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/language/phpmailer.lang-ro.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/language/phpmailer.lang-ru.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/language/phpmailer.lang-se.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/language/phpmailer.lang-sk.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/language/phpmailer.lang-sr.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/language/phpmailer.lang-tr.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/language/phpmailer.lang-uk.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/language/phpmailer.lang-vi.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/language/phpmailer.lang-zh.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/language/phpmailer.lang-zh_cn.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/test/phpmailerLangTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/test/phpmailerTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/docs/pop3_article.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/examples/pop_before_smtp.phps" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/read_controller.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/test/runfakepopserver.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/examples/send_file_upload.phps" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/examples/sendmail.phps" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/examples/scripts/shAutoloader.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/examples/scripts/shBrushPhp.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/examples/styles/shCore.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/examples/scripts/shCore.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/examples/styles/shCoreDefault.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/examples/styles/shCoreDjango.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/examples/styles/shCoreEclipse.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/examples/styles/shCoreEmacs.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/examples/styles/shCoreFadeToGrey.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/examples/styles/shCoreMDUltra.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/examples/styles/shCoreMidnight.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/examples/styles/shCoreRDark.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/examples/scripts/shLegacy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/examples/styles/shThemeAppleScript.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/examples/styles/shThemeDefault.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/examples/styles/shThemeDjango.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/examples/styles/shThemeEclipse.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/examples/styles/shThemeEmacs.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/examples/styles/shThemeFadeToGrey.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/examples/styles/shThemeMDUltra.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/examples/styles/shThemeMidnight.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/examples/styles/shThemeRDark.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/examples/styles/shThemeVisualStudio.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/examples/smtp.phps" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/examples/smtp_check.phps" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/examples/smtp_no_auth.phps" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/cart/sumProductUpd.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/test/test_callback.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/test/testbootstrap-dist.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/online/PHPM/travis.phpunit.xml.dist" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
+    <ignored path="catalog.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="catalog" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-4" />
+    <option name="y" value="-4" />
+    <option name="width" value="1928" />
+    <option name="height" value="1180" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="catalog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="catalog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="catalog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="FullScreen" value="false" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
+      <method />
+    </configuration>
+    <list size="0" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c2b48019-7e0e-44c4-b175-9e01cf0bcac2" name="Default" comment="" />
+      <created>1444044684618</created>
+      <option name="number" value="Default" />
+      <updated>1444044684618</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-4" y="-4" width="1928" height="1180" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33011582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1400426" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+    <MESSAGE value="fgrttj" />
+    <option name="LAST_COMMIT_MESSAGE" value="fgrttj" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+</project>

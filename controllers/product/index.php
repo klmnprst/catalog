@@ -42,7 +42,7 @@ $result = mysqli_query($db, $query);
       echo '<p><a href="/cat/'.$cat_url.'">'.$cat_name.'</a></p>';
 
 
-      build_product($row['name'],$row['price'],$img,$action,$row['product_id'],$text);
+      build_product($row['name'],$img,$action,$row['product_id'],$text);
 
 
 

@@ -115,10 +115,7 @@ if(isset($_COOKIE['product']) AND ($_COOKIE['product'] != '0')) {
 
 //Построение блока с продуктом /* взять карточку с материал дизайна */ 
 function build_product($name,$img,$url,$id,$text='') {
-if (empty($text)) {
-  
-
-?>
+if (empty($text)) { ?>
 <!-- CARD -->
 <div class="card shadow--2dp">
   <div class="card-img">
@@ -129,40 +126,16 @@ if (empty($text)) {
     <a href="/product/<?php echo $url; ?>"><?php echo $name; ?></a>
   </div>
 </div>
-
 <!-- CARD -->
 <?php } else { ?>
-
-
-    
-
 <div class="card-product">
   <div class="card-img">
     <img src="<?php echo $img; ?>" class="shadow--2dp">
-  </div>
-  
-  <div class="card-action">
-      <div class="card-price"><?php echo $price; ?> руб.</div>
-  </div>
-
-  <div class="card-product-amount">
-    <div class="card-total">
-      <span>Количество</span>
-      <button type="button" class="amount-minus">−</button>
-      <input type="text" name="amount" maxlength="4" value="1" style="width:30px;">
-      <button type="button" class="amount-plus">+</button>
-    </div>
-    <div class="card-order">
-      <a href="#"><img src="/template/img/basket-put-icon.png" id="<?php echo $id; ?>"></a>
-    </div>
   </div>
   <div class="text-product">
     <?php echo $text; ?>
   </div>
 </div>
-
-
-
  <?php  }
 }
 

@@ -26,25 +26,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controllers/product/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.32142857">
-              <caret line="44" column="32" selection-start-line="44" selection-start-column="32" selection-end-line="44" selection-end-column="32" />
+            <state vertical-scroll-proportion="0.22149837">
+              <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
               <folding>
-                <marker date="1444073073330" expanded="true" signature="486:684" placeholder="SELECT produ..product..." />
+                <marker date="1444076142032" expanded="true" signature="496:694" placeholder="SELECT produ..product..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="function.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="function.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/libs/function.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="2.6026058">
-              <caret line="141" column="0" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
+            <state vertical-scroll-proportion="-17.653847">
+              <caret line="141" column="32" selection-start-line="141" selection-start-column="32" selection-end-line="141" selection-end-column="32" />
               <folding>
-                <marker date="1444073207906" expanded="true" signature="55:81" placeholder="..." />
+                <marker date="1444076122913" expanded="true" signature="55:81" placeholder="..." />
+                <marker date="1444076122913" expanded="true" signature="3994:4089" placeholder="SELECT * FRO..." />
+                <marker date="1444076122913" expanded="true" signature="3994:4090" placeholder="SELECT * FRO..product_attribute..." />
+                <marker date="1444076122913" expanded="true" signature="3994:4122" placeholder="SELECT * FRO..." />
+                <marker date="1444076122913" expanded="true" signature="4243:4420" placeholder="..." />
+                <marker date="1444076122913" expanded="true" signature="4243:4532" placeholder="..." />
+                <marker date="1444076122913" expanded="true" signature="4263:4400" placeholder="..." />
+                <marker date="1444076122913" expanded="true" signature="4284:4392" placeholder="..." />
+                <marker date="1444076122913" expanded="true" signature="4420:4532" placeholder="..." />
+                <marker date="1444076122913" expanded="true" signature="4498:4532" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -58,8 +67,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/controllers/product/index.php" />
         <option value="$PROJECT_DIR$/libs/function.php" />
+        <option value="$PROJECT_DIR$/controllers/product/index.php" />
       </list>
     </option>
   </component>
@@ -243,7 +252,13 @@
       <option name="project" value="LOCAL" />
       <updated>1444049806607</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="home1">
+      <created>1444074217642</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1444074217642</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -252,6 +267,7 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1399371" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -263,7 +279,6 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -285,29 +300,39 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fgrttj" />
-    <option name="LAST_COMMIT_MESSAGE" value="fgrttj" />
+    <MESSAGE value="home1" />
+    <option name="LAST_COMMIT_MESSAGE" value="home1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/controllers/product/index.php">
+    <entry file="file://$PROJECT_DIR$/libs/function.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32142857">
-          <caret line="44" column="32" selection-start-line="44" selection-start-column="32" selection-end-line="44" selection-end-column="32" />
+        <state vertical-scroll-proportion="-17.653847">
+          <caret line="141" column="32" selection-start-line="141" selection-start-column="32" selection-end-line="141" selection-end-column="32" />
           <folding>
-            <marker date="1444073073330" expanded="true" signature="486:684" placeholder="SELECT produ..product..." />
+            <marker date="1444076122913" expanded="true" signature="55:81" placeholder="..." />
+            <marker date="1444076122913" expanded="true" signature="3994:4089" placeholder="SELECT * FRO..." />
+            <marker date="1444076122913" expanded="true" signature="3994:4090" placeholder="SELECT * FRO..product_attribute..." />
+            <marker date="1444076122913" expanded="true" signature="3994:4122" placeholder="SELECT * FRO..." />
+            <marker date="1444076122913" expanded="true" signature="4243:4420" placeholder="..." />
+            <marker date="1444076122913" expanded="true" signature="4243:4532" placeholder="..." />
+            <marker date="1444076122913" expanded="true" signature="4263:4400" placeholder="..." />
+            <marker date="1444076122913" expanded="true" signature="4284:4392" placeholder="..." />
+            <marker date="1444076122913" expanded="true" signature="4420:4532" placeholder="..." />
+            <marker date="1444076122913" expanded="true" signature="4498:4532" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/libs/function.php">
+    <entry file="file://$PROJECT_DIR$/controllers/product/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.6026058">
-          <caret line="141" column="0" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.22149837">
+          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
           <folding>
-            <marker date="1444073207906" expanded="true" signature="55:81" placeholder="..." />
+            <marker date="1444076142032" expanded="true" signature="496:694" placeholder="SELECT produ..product..." />
           </folding>
         </state>
       </provider>

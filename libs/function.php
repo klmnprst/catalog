@@ -139,7 +139,32 @@ if (empty($text)) { ?>
  <?php  }
 }
 
+function build_product_character($product_id) {
+    global $db;
+    $query = "SELECT * FROM `product_attribute` LEFT JOIN `attribute` USING(attribute_id) WHERE product_id = $product_id ORDER BY `sort_order`";
+    //echo $query;
+    $result = mysqli_query($db, $query);
+    if (mysqli_num_rows($result)>0) {
+        echo '<table>
+            <thead>
+                <tr>
+                    <th>Наименование характеристики</th>
+                    <th>Значение</th>
+            </thead>
+            <tbody>';
 
+        while($row = mysqli_fetch_assoc($result)) {
+            echo '<tr>';
+            echo '<td>' . $row['name']  . '</td>';
+            echo '<td>' . $row['value'] . '</td>';
+            echo '</tr>';
+        }
+        echo '</tbody>';
+        echo '</table>';
+
+    }
+
+}
 
 
 

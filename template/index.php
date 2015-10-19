@@ -4,7 +4,6 @@
 	<meta charset="UTF-8">
 	<title><?php if (isset($title)) {echo $title;} ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/foundation.css" />
 	<meta name="description" content="<?php if (isset($description)) {echo $description;}  ?>" />
 	<meta name="keywords" content="<?php if (isset($keywords)) {echo $keywords;	}  ?>" />
     <script src="/template/js/vendor/modernizr.js"></script>
@@ -19,8 +18,8 @@
 
 
 <header id="site-header">
-    <div class="row">
-        <div class="large-12 columns  contain-to-grid">
+    <div class="row addmargin">
+        <div class="large-12 columns">
             <nav class="top-bar" data-topbar>
                 <ul class="title-area">
                     <li class="name">
@@ -64,7 +63,7 @@
         <aside class="large-3 columns">
 
             <div id="info"></div>
-
+            <?php include 'login.php'; ?>
             <p class="panel">МЕНЮ</p>
             <?php echo $cat_menu;	?>
         </aside>
@@ -77,10 +76,10 @@
                     <li class="current"><a href="#">Cloning</a></li>
                 </ul>
 
-                <h3 class="panel">Article</h3>
                 <?php
                 echo $content;
                 ?>
+
             </article>
 
 

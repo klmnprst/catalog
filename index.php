@@ -1,21 +1,33 @@
 <?php
-
+ini_set('display_errors', TRUE);
+error_reporting(E_ALL);
+  
 #Установка ключа доступа к файлам 
 define('MY_KEY', true);
 if(!isset($_COOKIE['product'])) {SetCookie("product",0,time()+86400,"/");} 
 
 
 header("Content-Type: text/html; charset=utf-8");  
-error_reporting(E_ALL);  
 
+
+
+
+
+
+session_start();
+$errors = array(); #for login system
 	
 #Подключаем библиотеки
 include './libs/db.php'; 
 include './libs/function.php';
+include './libs/user.php';
 
-
-
-
+/*
+if (isset($_SESSION['user_id'])) {
+    echo $_SESSION['user_id'];
+}
+*/
+//unset($_SESSION['user_id']);
 
 
 ################################################################################################
@@ -27,7 +39,7 @@ $routes = array
         // паттерн в формате Perl-совместимого реулярного выражения
         'pattern' => '~^/$~',
         // Имя класса обработчика
-        'class' => 'Index',
+        'class' => 'default',
         // Имя метода класса обработчика
         'method' => 'index'
     ),
@@ -37,6 +49,12 @@ $routes = array
         'pattern' => '~^/registration\.xhtml$~',
         'class' => 'User',
         'method' => 'registration',
+    ),
+
+    array(
+        'pattern' => '~^/product.*$~',
+        'class' => 'product',
+        'method' => 'index',
     ),
 
     // Досье пользователя (http://localhost/userinfo/12345.xhtml)
@@ -61,6 +79,18 @@ $routes = array
         // topic_id = 12345
         'aliases' => array('forum_url', 'topic_id'),
     ),
+    // Регистрация пользователей, главная
+    array(
+        'pattern' => '~^/user/login$~',
+        'class' => 'user',
+        'method' => 'login',
+    ),
+
+    array(
+        'pattern' => '~^/user/logout$~',
+        'class' => 'user',
+        'method' => 'logout',
+    ),
 
     // и т.д.
 );
@@ -68,8 +98,8 @@ $routes = array
 ################################################################################################
 
 // Назначаем модуль и действие по умолчанию.
-$module = 'Not_Found';
-$action = 'main';
+$module = 'default';
+$action = 'index';
 // Массив параметров из URI запроса.
 $params = array();
 
@@ -96,13 +126,14 @@ foreach ($routes as $map)
         break;
     }
 }
+/*
 echo '<div data-alert class="alert-box success radius">';
 echo "\$module: $module\n";
 echo "\$action: $action\n";
 echo "\$params:\n";
 print_r($params);
 echo '</div>';
-
+*/
 
 
 
@@ -153,7 +184,8 @@ ob_end_clean();
 ############ Генерируем боковое меню каталога #########
 
 
-################# CONTENT #################
+################# CONTENT OLD #################
+/*
 ob_start();
 #Подключаем контроллер
 $controller_path = './controllers/' .$controller. '/index.php';
@@ -164,6 +196,24 @@ if (file_exists($controller_path)) {
 } 
 	//header('Location: /404.html');
 	//exit;
+$content = ob_get_contents();   
+ob_end_clean();   
+*/
+################# CONTENT OLD #################
+
+################## CONTENT #################
+
+ob_start();
+#Подключаем контроллер
+$controller_path = './controllers/' .$module. '/' .$action. '.php';
+//echo $controller_path;
+if (file_exists($controller_path)) {
+    include $controller_path;
+} else {
+    include './controllers/default/index.php';
+} 
+    //header('Location: /404.html');
+    //exit;
 $content = ob_get_contents();   
 ob_end_clean();   
 ################# CONTENT #################

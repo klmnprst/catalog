@@ -24,7 +24,7 @@ $result = mysqli_query($db, "SELECT * FROM main WHERE url='$url'");
       $keywords = $row['keywords'];
       $description = $row['description'];
       $text = $row['pagetext'];
-      echo "<h1 class=\"first\">".$title."</h1>";
+      echo "<h1 class=\"panel\">".$title."</h1>";
       echo $text;
   } else {
     header('Location: /404.html');

@@ -8,6 +8,23 @@ function print_arr($arr) {
 
 }
 
+
+
+
+
+
+
+/**
+ * sanitize
+ */
+function sanitize($data) {
+  global $db;
+  return mysqli_real_escape_string($db,$data);
+}
+
+
+
+
 /////////////// Функция построения дерева ////////////////
 function build_tree_class($arr,$parent,$class=''){
     if (is_array($arr) and isset($arr[$parent])){
@@ -115,10 +132,7 @@ if(isset($_COOKIE['product']) AND ($_COOKIE['product'] != '0')) {
 
 //Построение блока с продуктом /* взять карточку с материал дизайна */ 
 function build_product($name,$img,$url,$id,$text='') {
-if (empty($text)) {
-  
-
-?>
+if (empty($text)) { ?>
 <!-- CARD -->
 <div class="card shadow--2dp">
   <div class="card-img">
@@ -129,44 +143,45 @@ if (empty($text)) {
     <a href="/product/<?php echo $url; ?>"><?php echo $name; ?></a>
   </div>
 </div>
-
 <!-- CARD -->
 <?php } else { ?>
-
-
-    
-
 <div class="card-product">
   <div class="card-img">
     <img src="<?php echo $img; ?>" class="shadow--2dp">
-  </div>
-  
-  <div class="card-action">
-      <div class="card-price"><?php echo $price; ?> руб.</div>
-  </div>
-
-  <div class="card-product-amount">
-    <div class="card-total">
-      <span>Количество</span>
-      <button type="button" class="amount-minus">−</button>
-      <input type="text" name="amount" maxlength="4" value="1" style="width:30px;">
-      <button type="button" class="amount-plus">+</button>
-    </div>
-    <div class="card-order">
-      <a href="#"><img src="/template/img/basket-put-icon.png" id="<?php echo $id; ?>"></a>
-    </div>
   </div>
   <div class="text-product">
     <?php echo $text; ?>
   </div>
 </div>
-
-
-
  <?php  }
 }
 
+function build_product_character($product_id) {
+    global $db;
+    $query = "SELECT * FROM `product_attribute` LEFT JOIN `attribute` USING(attribute_id) WHERE product_id = $product_id ORDER BY `sort_order`";
+    //echo $query;
+    $result = mysqli_query($db, $query);
+    if (mysqli_num_rows($result)>0) {
+        echo '<table>
+            <thead>
+                <tr>
+                    <th>Наименование характеристики</th>
+                    <th>Значение</th>
+            </thead>
+            <tbody>';
 
+        while($row = mysqli_fetch_assoc($result)) {
+            echo '<tr>';
+            echo '<td>' . $row['name']  . '</td>';
+            echo '<td>' . $row['value'] . '</td>';
+            echo '</tr>';
+        }
+        echo '</tbody>';
+        echo '</table>';
+
+    }
+
+}
 
 
 

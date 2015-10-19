@@ -1,8 +1,8 @@
-﻿<?php
+<?php
 
 
 $host     = 'localhost';
-$dbname   = 'shop';
+$dbname   = 'catalog';
 $user     = 'root';
 $password = '';
 

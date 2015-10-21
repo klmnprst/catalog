@@ -15,14 +15,13 @@ $errors = array();
 include './libs/db.php'; 
 include './libs/function.php';
 include './libs/user.php';
-
-/*
-if (isset($_SESSION['user_id'])) {
-    echo $_SESSION['user_id'];
+if (logged_in() === true) {
+    if (user_active($_SESSION['username']) === false) {
+        session_destroy();
+        header('Location: /');
+        die();
+    }
 }
-*/
-//unset($_SESSION['user_id']);
-
 
 ################################################################################################
 // Конфигурация маршрутов URL проекта.

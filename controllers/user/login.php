@@ -23,6 +23,7 @@ if (empty($_POST) === false) {
 			$first_name = $user_info[1]; 
 			$_SESSION['user_id'] = $user_id;
 			$_SESSION['first_name'] = $first_name;
+			$_SESSION['username'] = $username;
 			//print_arr($_SESSION);
 			header("Location: /");
 			exit();

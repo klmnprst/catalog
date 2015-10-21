@@ -1,6 +1,6 @@
 <?php 
 
-if (logged_in() === true) {
+if (isset($_SESSION['first_name'])) {
 	echo '<p class="panel">Привет ' . $_SESSION['first_name'] . '</p>';
 	echo '<p><a href="/user/logout">logout</a></p>';
 } else { ?>

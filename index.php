@@ -1,21 +1,15 @@
 <?php
+#Выводим все ошибки
 ini_set('display_errors', TRUE);
 error_reporting(E_ALL);
-  
 #Установка ключа доступа к файлам 
 define('MY_KEY', true);
-if(!isset($_COOKIE['product'])) {SetCookie("product",0,time()+86400,"/");} 
-
-
+#Установка кодировки
 header("Content-Type: text/html; charset=utf-8");  
-
-
-
-1
-
-
+#Стартуем сессию
 session_start();
-$errors = array(); #for login system
+#for user controller
+$errors = array(); 
 	
 #Подключаем библиотеки
 include './libs/db.php'; 

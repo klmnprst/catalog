@@ -29,12 +29,12 @@ if (empty($_POST) === false) {
 		}
 	}
 
-	$title = 'LOGIN';
-	echo '<h1 class="panel">LOGIN</h1>';
+	
 	
 } else {
 	$errors[] = 'Данные не отправлены';
 }
 
-
+$title = 'LOGIN';
+echo '<h1 class="panel">LOGIN</h1>';
 echo output_errors($errors);

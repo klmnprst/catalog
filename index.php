@@ -72,11 +72,18 @@ $routes = array
         // topic_id = 12345
         'aliases' => array('forum_url', 'topic_id'),
     ),
-    // Регистрация пользователей, главная
+    // Регистрация пользователей, login
     array(
         'pattern' => '~^/user/login$~',
         'class' => 'user',
         'method' => 'login',
+    ),
+
+    // Регистрация пользователей, register
+    array(
+        'pattern' => '~^/user/register$~',
+        'class' => 'user',
+        'method' => 'register',
     ),
 
     array(

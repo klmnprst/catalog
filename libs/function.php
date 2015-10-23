@@ -22,7 +22,13 @@ function sanitize($data) {
   return mysqli_real_escape_string($db,$data);
 }
 
-
+/**
+ * array_sanitize
+ */
+function array_sanitize(&$item) {
+  global $db;
+  return mysqli_real_escape_string($db,$item);
+}
 
 
 /////////////// Функция построения дерева ////////////////

@@ -12,6 +12,19 @@ function user_exist($username) {
   return (mysqli_num_rows($result) == 1) ? true : false;
 }
 
+
+/**
+ * email_exist проверка существования юзера по имени
+ */
+function email_exist($email) {
+  global $db;
+
+  $email = sanitize($email);
+  $query = "SELECT * FROM  `users` WHERE `email` = '$email'";
+  $result = mysqli_query($db, $query);
+  return (mysqli_num_rows($result) == 1) ? true : false;
+}
+
 /**
  * user_active проверка флага active
  */
@@ -33,6 +46,24 @@ function user_id_from_username($username) {
   $query = "SELECT `user_id` FROM  `users` WHERE `username` = '$username'";
   $result = mysqli_query($db, $query);
   return (mysqli_fetch_row($result));
+}
+
+
+/**
+ *register_user 
+ */
+function register_user($register_data) {
+  $register_data['password'] = md5($register_data['password']);
+  global $db;
+  array_walk($register_data, 'array_sanitize');
+  $fields = '`' . implode('`,`',array_keys($register_data)) . '`';
+  $data =  '\'' . implode('\', \'', $register_data) . '\'';
+  $query = "INSERT INTO `users` ($fields) VALUE ($data)";
+  //echo $query;
+  mysqli_query($db,$query); 
+
+
+  
 }
 
 

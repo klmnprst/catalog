@@ -1,3 +1,32 @@
+<?php 
+if (empty($_POST) === false) {
+	$required_fields = array('username', 'password', 'password_again', 'first_name', 'email');
+	//print_arr($required_fields);
+	foreach ($_POST as $key => $value) {
+		if (empty($value) && in_array($key, $required_fields) === true) {
+			$errors[] = 'Fields marked * are required';
+			break 1;
+		}
+	}
+
+	if (empty($errors) === true) {
+		if (user_exist($_POST['username']) === true) {
+			$errors[] = Sorry, the username''
+		}
+
+	}
+
+}
+
+
+print_arr($errors);
+?>
+
+333
+
+
+
+
 <h1 class="panel">Регистрация</h1>
 
 <form action="" method="post">

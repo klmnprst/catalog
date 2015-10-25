@@ -10,8 +10,7 @@
 echo "\n<!-- ################ page ################### -->\n";
 
 
-$url = $controller;
-$url = (($url == 'default')  ? '/' : $url);
+
 
 
 if (isset($url) AND !empty($url)) {

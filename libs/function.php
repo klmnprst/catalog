@@ -9,9 +9,26 @@ function print_arr($arr) {
 }
 
 
+/**
+ * protect_page
+ */
+function protect_page() {
+  if (logged_in() === false) {
+    header('Location: /user/protected');
+    exit();
+  }
+}
 
 
-
+/**
+ * logged_in_redirect
+ */
+function logged_in_redirect() {
+  if (logged_in() === true) {
+    header('Location: /');
+    exit();
+  }
+}
 
 
 /**

@@ -1,1 +1,4 @@
-<?php echo 'index';
+<?php  protect_page();
+
+
+echo 'admin';

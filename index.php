@@ -45,9 +45,10 @@ $routes = array
     ),
 
     array(
-        'pattern' => '~^/product.*$~',
+        'pattern' => '~^/product/(.*)$~',
         'class' => 'product',
         'method' => 'index',
+        'aliases' => array('product_url'),
     ),
 
     // Досье пользователя (http://localhost/userinfo/12345.xhtml)
@@ -60,6 +61,14 @@ $routes = array
         // В данном случае в переменную user_id должен будет записаться числовой
         // идентификатор пользователя - 12345
         'aliases' => array('user_id'),
+    ),
+
+    // Категории 
+    array(
+        'pattern' => '~^/cat/(.*)$~',
+        'class' => 'cat',
+        'method' => 'index',
+        'aliases' => array('cat_url'),
     ),
 
     // Форум (http://localhost/forum/web-development/php/12345.xhtml)
@@ -85,12 +94,23 @@ $routes = array
         'class' => 'user',
         'method' => 'register',
     ),
+    array(
+        'pattern' => '~^/user/protected$~',
+        'class' => 'user',
+        'method' => 'protected',
+    ),
+       
 
     array(
         'pattern' => '~^/user/logout$~',
         'class' => 'user',
         'method' => 'logout',
     ),
+    array(
+        'pattern' => '~^/admin.*$~',
+        'class' => 'admin',
+        'method' => 'index',
+    )
 
     // и т.д.
 );
@@ -102,16 +122,18 @@ $module = 'default';
 $action = 'index';
 // Массив параметров из URI запроса.
 $params = array();
-
+$url_path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+//echo $url_path;
 foreach ($routes as $map)
 {
-    $url_path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
-
+    
     if (preg_match($map['pattern'], $url_path, $matches))
     {
+
         // Выталкиваем первый элемент - он содержит всю строку URI запроса
         // и в массиве $params он не нужен.
         array_shift($matches);
+        //print_r($matches);
 
         // Формируем массив $params с теми названиями ключей переменных,
         // которые мы указали в $routes
@@ -124,8 +146,18 @@ foreach ($routes as $map)
         $action = $map['method'];
 
         break;
-    }
+    } 
+        
+    
 }
+$url_path = trim($url_path,"/");
+$arr_url = explode('/',$url_path);
+$url  = $arr_url['0']; //Если совпадения не найдены, то этот url пойдет в контроллер по умолчанию
+if (empty($url)) $url = "/";
+
+
+
+
 /*
 echo '<div data-alert class="alert-box success radius">';
 echo "\$module: $module\n";
@@ -145,6 +177,7 @@ echo '</div>';
 
 
 ################# LITE ROUTING ################
+/*
 $url = parse_url($_SERVER['REQUEST_URI']);
 $url['path'] = trim($url['path'],"/"); //убираем слеши
 $arr_url = explode('/',$url['path']); //находим controller и action
@@ -153,6 +186,7 @@ if ($controller=='') $controller='default'; //controller по умолчанию
 $action = (isset($arr_url[1]) ? $arr_url[1] : ''); //action
 $params = (isset($arr_url[2]) ? $arr_url[2] : ''); //params
 $query = (isset($url['query']) ? $url['query'] : ''); //params
+*/
 ################# LITE ROUTING ################
 
 

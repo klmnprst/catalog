@@ -10,13 +10,14 @@
 echo "\n<!-- ################ cat ################### -->\n";
 
 
-//echo $action;
+$url = $params['cat_url'];
 
 
 
-if (isset($action) AND !empty($action)) { //Ищем категорию
 
-$query = "SELECT * FROM `main` WHERE `url`='$action' AND catalog='1'";
+if (isset($url) AND !empty($url)) { //Ищем категорию
+
+$query = "SELECT * FROM `main` WHERE `url`='$url' AND catalog='1'";
 $result = mysqli_query($db, $query);
   if (mysqli_num_rows($result)>0) {
     
@@ -42,7 +43,7 @@ $result = mysqli_query($db, $query);
             $rowimg = mysqli_fetch_assoc($res);
             $imgpath = '/img/cat/'.$row3['cat_id'].'/'.$rowimg['name'];
             //echo $imgpath;
-            build_product($row3['name'],$imgpath,$row3['url'],$row3['product_id']);
+            build_product($row3['name'],$imgpath,$row3['product_url'],$row3['product_id']);
           }
         }
          echo '<br style="clear:both">';
@@ -71,7 +72,7 @@ $result = mysqli_query($db, $query);
           $imgpath = '/img/cat/'.$row['id'].'/'.$rowimg['name'];
           #echo $imgpath;
 
-          build_product($row2['name'],$imgpath,$row2['url'],$row2['product_id']);
+          build_product($row2['name'],$imgpath,$row2['product_url'],$row2['product_id']);
         }
         echo '<br style="clear:both">';
       }

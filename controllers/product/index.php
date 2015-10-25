@@ -11,12 +11,12 @@ echo "\n<!-- ################ product ################### -->\n";
 
 
 //echo $action; //это url
+$product_url = $params['product_url'];
 
 
+if (isset($product_url) AND !empty($product_url)) { //Ищем категорию
 
-if (isset($action) AND !empty($action)) { //Ищем категорию
-
-$query = "SELECT product.*, main.name AS cat_name, main.url AS cat_url, img.name AS img_name FROM product LEFT JOIN main ON product.cat_id = main.id LEFT JOIN img USING(product_id) WHERE product.url='$action'";
+$query = "SELECT product.*, main.name AS cat_name, main.url AS cat_url, img.name AS img_name FROM product LEFT JOIN main ON product.cat_id = main.id LEFT JOIN img USING(product_id) WHERE product.product_url='$product_url'";
 $result = mysqli_query($db, $query);
   if (mysqli_num_rows($result)>0) {
       $row = mysqli_fetch_assoc($result);

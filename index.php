@@ -106,10 +106,11 @@ $routes = array
         'class' => 'user',
         'method' => 'logout',
     ),
+
     array(
-        'pattern' => '~^/admin.*$~',
+        'pattern' => '~^/admin/attribute$~',
         'class' => 'admin',
-        'method' => 'index',
+        'method' => 'attribute',
     )
 
     // и т.д.
@@ -133,7 +134,7 @@ foreach ($routes as $map)
         // Выталкиваем первый элемент - он содержит всю строку URI запроса
         // и в массиве $params он не нужен.
         array_shift($matches);
-        //print_r($matches);
+
 
         // Формируем массив $params с теми названиями ключей переменных,
         // которые мы указали в $routes
@@ -147,11 +148,12 @@ foreach ($routes as $map)
 
         break;
     } 
-        
+            
     
 }
 $url_path = trim($url_path,"/");
 $arr_url = explode('/',$url_path);
+//print_arr($arr_url);
 $url  = $arr_url['0']; //Если совпадения не найдены, то этот url пойдет в контроллер по умолчанию
 if (empty($url)) $url = "/";
 
@@ -240,7 +242,6 @@ ob_end_clean();
 ob_start();
 #Подключаем контроллер
 $controller_path = './controllers/' .$module. '/' .$action. '.php';
-//echo $controller_path;
 if (file_exists($controller_path)) {
     include $controller_path;
 } else {

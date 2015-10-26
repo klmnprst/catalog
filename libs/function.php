@@ -13,9 +13,10 @@ function print_arr($arr) {
  * protect_page
  */
 function protect_page() {
-  if (logged_in() === false) {
+  //print_r($_SESSION);
+  if ($_SESSION['username'] != 'admin') {
     header('Location: /user/protected');
-    exit();
+    exit();  
   }
 }
 

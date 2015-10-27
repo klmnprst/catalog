@@ -9,6 +9,7 @@
     <script src="/template/js/vendor/modernizr.js"></script>
     <script src="/template/js/vendor/jquery.js"></script>
 	<link rel="stylesheet" href="/template/css/foundation.css" />
+    <link rel="stylesheet" href="/template/css/foundation-icons.css" />
 	<link rel="stylesheet" href="/template/css/custom.css" />
 	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
 </head>

@@ -107,21 +107,15 @@ $routes = array
         'method' => 'logout',
     ),
 
-    array(
-        'pattern' => '~^/admin/attribute$~',
-        'class' => 'admin',
-        'method' => 'attribute',
-    ),
-    array(
-        'pattern' => '~^/admin/attribute/edit_group=(\d+)$~',
-        'class' => 'admin',
-        'method' => 'attribute',
-        'aliases' => array('group_id'),
-    ),
      array(
         'pattern' => '~^/admin$~',
         'class' => 'admin',
         'method' => 'index',
+    ),
+    array(
+        'pattern' => '|(?:/admin/attribute)(?:.*)|',
+        'class' => 'admin',
+        'method' => 'attribute',
     )
 
     // и т.д.

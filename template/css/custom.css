@@ -8,3 +8,12 @@ margin-bottom: 1em;
    margin-right: auto;
    max-width: initial;
 }
+
+.admin-category {
+	 margin-top: 2px;
+	 border-bottom: 1px dotted gray;
+}
+
+.admin-category:hover {
+	background-color: #FF5B00;
+}

@@ -20,7 +20,7 @@
 
 
 <div class="row fullWidth" style="background:#F2B707; margin-bottom:5px;">
-     <div class="large-12 columns">ADMIN</div>
+     <div class="large-12 columns"><h3>ADMIN</h3></div>
 </div>
 
 

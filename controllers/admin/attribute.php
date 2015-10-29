@@ -113,6 +113,23 @@ if (isset($_GET['del_group_attr'])) {
 
 
 
+/**
+ * Delete attribute
+ */
+if (isset($_GET['del_attr'])) {
+	$attribute_id = (int)$_GET['del_attr'];
+	$attribute_group_id = (int)$_GET['a_g_id'];
+	$query = "DELETE FROM `attribute` WHERE `attribute_id` = '$attribute_id' LIMIT 1";
+	$result = mysqli_query($db,$query);
+	if ($result) {
+		header("Location: /admin/attribute/?edit_attributes=$attribute_group_id");
+		exit();
+	}
+}
+/**
+ * Delete attribute
+ */
+
 
 
 
@@ -147,7 +164,7 @@ while ($row = mysqli_fetch_assoc($result)) {
 			<span data-tooltip aria-haspopup="true" class="has-tip" title="Добавить аттрибуты для группы">
 					<a href="/admin/attribute?add_attributes=<?php echo $row['attribute_group_id']; ?>"><i class="fi-plus large"></i></a>
 			</span>
-			<span data-tooltip aria-haspopup="true" class="has-tip" title="Удалить!">
+			<span data-tooltip aria-haspopup="true" class="has-tip" title="Удалить группу!">
 					<a href="/admin/attribute?del_group_attr=<?php echo $row['attribute_group_id']; ?>"><i class="fi-x large"></i></a>
 			</span>
 
@@ -189,7 +206,7 @@ if (isset($_GET['attribute_name'])) {
 
 
 /**
- * Edit attributes
+ * Edit attributes and delete
  */
 if (isset($_GET['edit_attributes'])) {
 	$attribute_group_id = (int)$_GET['edit_attributes'];
@@ -209,7 +226,7 @@ if (isset($_GET['edit_attributes'])) {
 				</div>
 				<div class="large-2 columns">
 					<span data-tooltip aria-haspopup="true" class="has-tip" title="Удалить!">
-						<a href="/admin/attribute?del_attr=<?php echo $row['attribute_id']; ?>"><i class="fi-x large"></i></a>
+						<a href="/admin/attribute?del_attr=<?php echo $row['attribute_id']; ?>&a_g_id=<?php echo $attribute_group_id; ?>"><i class="fi-x large"></i></a>
 					</span>
 				</div>
 			</div>	
@@ -223,7 +240,7 @@ if (isset($_GET['edit_attributes'])) {
 	}
 }
 /**
- * Edit attributes
+ * Edit attributes and delete
  */
 
 

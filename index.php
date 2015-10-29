@@ -116,6 +116,11 @@ $routes = array
         'pattern' => '|(?:/admin/attribute)(?:.*)|',
         'class' => 'admin',
         'method' => 'attribute',
+    ),
+    array(
+        'pattern' => '|(?:/admin/category)(?:.*)|',
+        'class' => 'admin',
+        'method' => 'category',
     )
 
     // и т.д.
@@ -139,6 +144,7 @@ foreach ($routes as $map)
         // Выталкиваем первый элемент - он содержит всю строку URI запроса
         // и в массиве $params он не нужен.
         array_shift($matches);
+
 
 
         // Формируем массив $params с теми названиями ключей переменных,
@@ -263,6 +269,11 @@ ob_end_clean();
  
 
 	
-#Подключаем главный шаблон   
-include './template/index.php';
+#Подключаем главный шаблон
+if (preg_match("|admin|", $_SERVER['REQUEST_URI'])) {
+    include './template/admin.php';
+} else {
+    include './template/index.php';    
+}
+
 ?>

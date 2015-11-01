@@ -17,3 +17,13 @@ margin-bottom: 1em;
 .admin-category:hover {
 	background-color: #FF5B00;
 }
+
+#info2 {
+	background-color: #ffe400;
+	border: 1px solid #9e8d00;
+	padding: 10px;
+	margin: 0 0 15px 0;
+	display: none;
+
+
+}

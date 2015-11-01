@@ -121,6 +121,11 @@ $routes = array
         'pattern' => '|(?:/admin/category)(?:.*)|',
         'class' => 'admin',
         'method' => 'category',
+    ),
+    array(
+        'pattern' => '|(?:/admin/goods)(?:.*)|',
+        'class' => 'admin',
+        'method' => 'goods'
     )
 
     // и т.д.

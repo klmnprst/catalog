@@ -32,6 +32,34 @@ function logged_in_redirect() {
 }
 
 
+
+
+function clear_dir() // очистка tmp папки
+{
+    $list = scandir("../tmp");
+    unset($list[0],$list[1]);
+    foreach ($list as $file)
+    {
+      //echo $_SERVER['DOCUMENT_ROOT']."/admin/tmp/$file";
+      unlink($_SERVER['DOCUMENT_ROOT']."/admin/tmp/$file");
+    }
+}
+
+function show_dir($dir) // функция показа картинок из tmp папки
+{ echo $dir;
+    $list = scandir($dir);
+    unset($list[0],$list[1]);
+    foreach ($list as $file)
+    {
+      echo "<img style=\"height: 150px;\" src=\"/admin/tmp/$file\" class=\"img-polaroid\" />&nbsp;";
+
+    }
+    echo "<br><br>";
+    
+}
+
+
+
 /**
  * sanitize
  */

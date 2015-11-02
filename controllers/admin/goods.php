@@ -6,10 +6,9 @@ print_arr($_POST);
 /**
  * TODO 
  * если аттрибутов нет предложить форму через ajax
- * если есть то редактировать их
  * если есть предложить поменять группу (грохнуть существующие значения в существующей группе)
- * если меняем категорию перекинуть фотки в другую директорию
- * при заливке фотки добавить ее имя в БД
+ * если меняем категорию перекинуть фотки в другую директорию <----
+ * 
  * 
  * проверить вывод меню категорий
  * прикрутить бредкрампс
@@ -103,9 +102,9 @@ if (isset($_GET['attribute_group_id'])) {
 	?>
 
 	<form method="post">
-  	URL<br>
-  	<input type="text" name="product_url" required>
-  	Name<br>
+  	URL <span id="url_check"></span><br>
+  	<input type="text" name="product_url" id="product_url" required> 
+  	Name<br> 
   	<input type="text" name="name" required>
   	Title<br>
   	<input type="text" name="title" required>
@@ -212,12 +211,12 @@ if (isset($_GET['goods_edit'])) {
 			$row = mysqli_fetch_assoc($result);
 			$product_id = $row['product_id']; ?>
 
-			<form method="post">
+			<form method="post" action="/admin/goods">
   				URL<br>
-  				<input type="text" name="url" value="<?php echo $row['product_url']; ?>">
+  				<input type="text" name="product_url" value="<?php echo $row['product_url']; ?>">
   				Name<br>
   				<input type="text" name="name" value="<?php echo $row['name']; ?>">
-  				Категория<br>
+  				Категория <?php echo $row['cat_id']; ?><br>
   				<select name="cat_id" id="cat_id">
   				<?php 
   				$query = "SELECT `id`,`name` FROM `main` WHERE `catalog` = '1'";
@@ -243,23 +242,17 @@ if (isset($_GET['goods_edit'])) {
           //echo $query;
           $result = mysqli_query($db,$query);
           if (mysqli_num_rows($result)>0) {
-            echo '<form>';
+            echo '<p>Аттрибуты: </p>';
             while ($row3 = mysqli_fetch_assoc($result)) {
               //print_arr($row3); ?>
-              <?php echo $row3['an']; ?><br>
+              <?php echo $row3['name']; ?><br>
               <input type="text" name="attribute[<?php echo $row3['attribute_id']; ?>]" value="<?php echo $row3['value']; ?>">
             <?php }
-            echo '</form>';
-          }
-          
-
+          }       
           ?>
-          
-          
-
-  				<input type="hidden" name="product_id" value="<?php echo $product_id; ?>">
+  				<input type="hidden" name="product_id" id="product_id" value="<?php echo $product_id; ?>">
   				<input type="submit" name="goods_change" class="button" value="Изменить">
-          <input type="file" name="file" id="file">
+	            <input type="file" name="file" id="file">
   				<div id="info2"></div>
   				<div id="preloader" style="display: none;"><img src="/template/img/preloader.gif" alt="loader"></div>
   				  <br />
@@ -270,12 +263,35 @@ if (isset($_GET['goods_edit'])) {
 
 ############### 2 ##################
 if (isset($_POST['goods_change'])) {
-	echo "sxsx";
+	$product_id = (int)$_POST['product_id'];	
+	$product_url = sanitize($_POST['product_url']);
+	$cat_id = (int)$_POST['cat_id'];
+	$name = sanitize($_POST['name']);
+	$pagetext = sanitize($_POST['pagetext']);
+	$title = sanitize($_POST['title']);
+	$keywords = sanitize($_POST['keywords']);
+	$description = sanitize($_POST['description']);
+	$time = time();
+	$query = "UPDATE `product` SET 
+	`product_url` = '$product_url',
+	`cat_id` = '$cat_id',
+	`name` = '$name',
+	`pagetext` = '$pagetext',
+	`title` = '$title',
+	`keywords` = '$keywords',
+	`description` = '$description',
+	`time` = '$time'
+	WHERE `product_id` = '$product_id'";
+	if (!mysqli_query($db,$query)) {mysqli_error($db);} 
+
+
+	if (isset($_POST['attribute']) AND !empty($_POST['attribute'])) {
+		foreach ($_POST['attribute'] as $attribute_id => $value) {
+			$query="UPDATE `product_attribute` SET `value` = '$value' WHERE `attribute_id` = '$attribute_id' AND `product_id` = '$product_id'";
+			if (!mysqli_query($db,$query)) {mysqli_error($db);} 
+		}
+	}
 }
-
-
-
-
 
 #################################################
 #              edit  product                    #
@@ -314,10 +330,12 @@ if (empty($_GET) AND empty($_POST)) { ?>
 $(document).ready(function(){
     $('#file').bind('change', function(){
     var category_id = $('#cat_id option:selected').val();
-    //alert('cat: ' + category_id);
+    var product_id = $('#product_id').val();
+    //alert(product_id);
 
     var data = new FormData();
     data.append('category_id', category_id);
+    data.append('product_id', product_id);
     var error = '';
     jQuery.each($('#file')[0].files, function(i, file) {
  
@@ -353,6 +371,26 @@ if (error != '') {$('#info').html(error);} else {
         });
          }
     })
+
+	//проверка уникальности url
+    $('#product_url').blur(function(){
+  		var product_url = $('#product_url').val();
+  		$.ajax({
+            url: '/controllers/admin/ajax/uniq_url.php',
+            data:  {product_url: product_url},
+            cache: false,
+            type: 'GET',
+            beforeSend: function() {
+                $('#preloader').show();
+            },
+            success: function(data){
+                $('#url_check').html(data);
+                $('#preloader').hide();
+            }
+        });
+  		
+	});
+
 });
 </script>
 <!-- for download pics -->

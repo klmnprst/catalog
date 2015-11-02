@@ -16,8 +16,8 @@ print_arr($_POST);
  * логотип подумать
  * поменять название фирмы
  * 
- * Zerotic & Tiger Twiist - Deepest Love
- * The Chaotic feat. Demmy Sober - Overdose (Origin
+ * 
+ * 
  * EW Live from NY hosted by Overfiend - facebook.com/louis.overfiend
  * Advert:Targetspot - Advert:TargetSpot
  * DLR & Script feat. Martyna Baker - Blue Room
@@ -237,9 +237,29 @@ if (isset($_GET['goods_edit'])) {
   				<input type="text" name="title" value="<?php echo $row['title']; ?>">
   				Page text<br>
   				<textarea name="pagetext" style="height:100px;"><?php echo $row['pagetext']; ?></textarea>
+          <?php 
+          //Аттрибуты если есть 
+          $query = "SELECT * FROM `attribute` LEFT JOIN `product_attribute` USING(`attribute_id`) WHERE `product_id` = '$product_id'";
+          //echo $query;
+          $result = mysqli_query($db,$query);
+          if (mysqli_num_rows($result)>0) {
+            echo '<form>';
+            while ($row3 = mysqli_fetch_assoc($result)) {
+              //print_arr($row3); ?>
+              <?php echo $row3['an']; ?><br>
+              <input type="text" name="attribute[<?php echo $row3['attribute_id']; ?>]" value="<?php echo $row3['value']; ?>">
+            <?php }
+            echo '</form>';
+          }
+          
+
+          ?>
+          
+          
+
   				<input type="hidden" name="product_id" value="<?php echo $product_id; ?>">
   				<input type="submit" name="goods_change" class="button" value="Изменить">
-  				<input type="file" name="file" id="file">
+          <input type="file" name="file" id="file">
   				<div id="info2"></div>
   				<div id="preloader" style="display: none;"><img src="/template/img/preloader.gif" alt="loader"></div>
   				  <br />

@@ -230,7 +230,8 @@ $cat_tree = array();
 while ($row = mysqli_fetch_assoc($result)) {
     $cat_tree[$row['parent_id']][$row['id']] = $row;
 }
-echo build_cat_tree($cat_tree,0,"side-nav");
+//echo build_cat_tree($cat_tree,0,"side-nav");
+echo build_cat_tree($cat_tree,0);
 $cat_menu = ob_get_contents();   
 ob_end_clean();  
 ############ Генерируем боковое меню каталога #########

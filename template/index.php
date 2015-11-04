@@ -24,13 +24,16 @@
             <nav class="top-bar" data-topbar>
                 <ul class="title-area">
                     <li class="name">
-                        <h1><a href="/">FIRM NAME</a></h1>
+                        <h1><a href="/">LIFEPROM</a></h1>
                     </li>
                     <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a>
                     </li>
                 </ul>
                 <section class="top-bar-section">
-                    <?php echo $top_menu;	?>
+                    
+                        <?php echo $top_menu;   ?>    
+                    
+                    
                     <ul class="right">
                         <li class="has-form">
                             <form>
@@ -66,7 +69,9 @@
             <div id="info"></div>
             <?php include 'login.php'; ?>
             <p class="panel">МЕНЮ</p>
+            <nav class="vertical">
             <?php echo $cat_menu;	?>
+            </nav>
         </aside>
         <div class="large-9 columns">
             <article>
@@ -89,10 +94,10 @@
     </div>
 
 </div>
-
+<br>
 <footer id="site-footer">
-    <div class="row">
-        <div class="large-12 columns panel radius">
+    <div class="row" style="padding: 0 0.9375rem;">
+        <div class="large-12 columns panel collapse">
             <p>Copyright &copy; <?php echo date('Y') ?></p>
         </div>
     </div>

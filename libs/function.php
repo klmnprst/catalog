@@ -123,7 +123,7 @@ function build_tree($arr,$parent,$id=''){
 /////////////// Функция построения дерева для каталога ////////////////
 function build_cat_tree($arr,$parent,$id=''){
 
-  
+  //print_arr($arr);
     if (is_array($arr) and isset($arr[$parent])){
         
         if(empty($id)) 

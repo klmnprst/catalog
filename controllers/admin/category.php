@@ -60,11 +60,18 @@ if (isset($_GET['add'])) { ?>
   <input type="checkbox" name="top_menu" value="1" /> Top menu<br />
   Parent_id<br>
   <select name="parent_id">
+  <option value="0">Корневая</option>
   <?php 
-  $query = "SELECT `id`,`name`,`parent_id` FROM `main` WHERE `id` <> '$id'";
+  $query = "SELECT `id`,`name`,`parent_id` FROM `main`";
   $result = mysqli_query($db,$query);
-  while ($row2 = mysqli_fetch_assoc($result)) { ?>
-  <option value="<?php echo $row2['id']; ?>"><?php echo $row2['name']; ?></option>
+  while ($row2 = mysqli_fetch_assoc($result)) { 
+    if ($row2['parent_id'] == '0') { ?>
+        <option value="<?php echo $row2['id']; ?>" class="parent"><?php echo $row2['name']; ?></option>
+    <?php } else { ?>
+        <option value="<?php echo $row2['id']; ?>" class="child"><?php echo $row2['name']; ?></option>    
+    <?php }
+    ?>
+  
   <?php  }  ?>
   </select>
   Keywords<br>
@@ -163,13 +170,22 @@ if (isset($_GET['edit_category'])) {
 
   <select name="parent_id">
   <?php 
-  $query = "SELECT `id`,`name`,`parent_id` FROM `main` WHERE `id` <> '$id'";
-  $result = mysqli_query($db,$query);
+  $query = "SELECT `id`,`name`,`parent_id` FROM `main`";
+  $result = mysqli_query($db,$query); ?>
+  <option value="0">Нет родителя</option>
+  <?php
   while ($row2 = mysqli_fetch_assoc($result)) { 
     if ($row2['id'] == $parent_id) { ?>
       <option selected value="<?php echo $row2['id']; ?>"><?php echo $row2['name']; ?></option>
-  <?php  } else { ?>
-    <option value="<?php echo $row2['id']; ?>"><?php echo $row2['name']; ?></option>
+  <?php  } else { 
+        if ($row2['parent_id'] === '0') { ?>
+            <option value="<?php echo $row2['id']; ?>"><strong><?php echo $row2['name']; ?></strong></option>
+        <?php } else { ?>
+            <option value="<?php echo $row2['id']; ?>"><?php echo $row2['name']; ?></option>      
+        <?php }
+
+    ?>
+    
   <?php  } } ?>
   </select>
 

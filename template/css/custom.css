@@ -27,3 +27,64 @@ margin-bottom: 1em;
 
 
 }
+
+
+
+
+/*VERTICAL MENU*/
+nav.vertical{
+  position:relative;
+  width:100%;
+
+}
+
+/* ALL UL */
+nav.vertical ul {
+  list-style: none;
+  margin: 0;
+}
+/* ALL LI */
+nav.vertical li {
+  position:relative;
+}
+/* ALL A */
+nav.vertical a{
+  display:block;
+  color:#eee;
+  text-decoration:none;
+  padding:7px 10px;
+  background:#667;
+  transition:0.2s;
+}
+/* ALL A HOVER */
+nav.vertical li:hover > a {
+  background:#778;
+}
+
+
+nav.vertical ul ul li a {
+	padding-left: 20px;
+	background-color: #79798c;
+	font-size: 0.9em;
+}
+
+nav.vertical ul ul ul li a {
+	padding-left: 40px;
+	background-color: #848499;
+	font-size: 0.8em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.parent {
+  color: red;
+}

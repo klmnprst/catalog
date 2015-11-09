@@ -183,31 +183,48 @@ if(isset($_COOKIE['product']) AND ($_COOKIE['product'] != '0')) {
 
 
 //Построение блока с продуктом /* взять карточку с материал дизайна */ 
-function build_product($name,$img,$url,$id,$text='') {
+
+//список для категорий
+function build_product($name,$img,$url,$id,$text='',$title='') {
 if (empty($text)) { ?>
 <!-- CARD -->
-<div class="card shadow--2dp">
-  <div class="card-img">
-    <a href="/product/<?php echo $url; ?>"><img src="<?php echo $img; ?>"></a>
-  </div>
+<div class="card">
+  <!-- картинка -->
+
+  <?php
+  $file = $_SERVER['DOCUMENT_ROOT'].$img;
   
-  <div class="card-text">
-    <a href="/product/<?php echo $url; ?>"><?php echo $name; ?></a>
-  </div>
+  if (is_file($file)) { ?>
+     <a href="/product/<?php echo $url; ?>"><img style="width:30%" src="<?php echo $img; ?>" alt="<?php echo $title; ?>" title="<?php echo $title; ?>"></a>
+  <?php } ?>
+  <!-- картинка -->
+
+  <!-- ссылка на продукт -->
+  <p><a href="/product/<?php echo $url; ?>"><?php echo $name; ?></a></p>
+  <!-- ссылка на продукт -->
 </div>
 <!-- CARD -->
-<?php } else { ?>
-<div class="card-product">
-  <div class="card-img">
-    <img src="<?php echo $img; ?>" class="shadow--2dp">
-  </div>
-  <div class="text-product">
-    <?php echo $text; ?>
-  </div>
-</div>
+
+
+
+
+<?php } else { 
+//Карточка продукта
+  $file = $_SERVER['DOCUMENT_ROOT'].$img;
+  if (is_file($file)) { ?>
+     <img src="<?php echo $img; ?>" alt="<?php echo $title; ?>" title="<?php echo $title; ?>">
+  <?php } ?>
+
+<p><?php echo $text; ?></p>
+
  <?php  }
 }
 
+
+
+
+
+//Вывод характеристик
 function build_product_character($product_id) {
     global $db;
     $query = "SELECT * FROM `product_attribute` LEFT JOIN `attribute` USING(attribute_id) WHERE product_id = $product_id ORDER BY `sort_order`";
@@ -223,6 +240,7 @@ function build_product_character($product_id) {
             <tbody>';
 
         while($row = mysqli_fetch_assoc($result)) {
+            if (empty($row['value'])) {continue;}
             echo '<tr>';
             echo '<td>' . $row['name']  . '</td>';
             echo '<td>' . $row['value'] . '</td>';

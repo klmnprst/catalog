@@ -8,6 +8,7 @@
 	<meta name="keywords" content="<?php if (isset($keywords)) {echo $keywords;	}  ?>" />
     <script src="/template/js/vendor/modernizr.js"></script>
     <script src="/template/js/vendor/jquery.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,400italic,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="/template/css/foundation.css" />
     <link rel="stylesheet" href="/template/css/foundation-icons.css" />
 	<link rel="stylesheet" href="/template/css/custom.css" />

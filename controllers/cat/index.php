@@ -12,6 +12,9 @@ echo "\n<!-- ################ cat ################### -->\n";
 
 $url = $params['cat_url'];
 
+/** ########################################################
+ * TODO http://foundation.zurb.com/apps/docs/#!/card
+ */ ########################################################
 
 
 
@@ -63,16 +66,16 @@ $result = mysqli_query($db, $query);
 
 
         while ($row2 = mysqli_fetch_assoc($result2)) {
-          //show_product($row2['name'], $row2['price']);
           
           $res = mysqli_query($db,"SELECT * FROM img WHERE product_id = $row2[product_id]");
-          $rowimg = mysqli_fetch_assoc($res);
-          #echo $rowimg['name'];
-          #echo $row['id'];
-          $imgpath = '/img/cat/'.$row['id'].'/'.$rowimg['name'];
-          #echo $imgpath;
+          if (mysqli_num_rows($res)>0) {
+            $rowimg = mysqli_fetch_assoc($res);
+            $imgpath = '/img/cat/'.$row['id'].'/'.$rowimg['name'];
+          } else {
+            $imgpath = false;
+          }
 
-          build_product($row2['name'],$imgpath,$row2['product_url'],$row2['product_id']);
+          build_product($row2['name'],$imgpath,$row2['product_url'],$row2['product_id'],$text='',$row2['title']);
         }
         echo '<br style="clear:both">';
       }

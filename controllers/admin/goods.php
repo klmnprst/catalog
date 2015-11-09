@@ -253,7 +253,7 @@ if (isset($_GET['goods_edit'])) {
           ?>
   				<input type="hidden" name="product_id" id="product_id" value="<?php echo $product_id; ?>">
   				<input type="submit" name="goods_change" class="button" value="Изменить">
-	            <input type="file" name="file" id="file">
+	            <input type="file" name="file" id="file" multiple>
   				<div id="info2"></div>
   				<div id="preloader" style="display: none;"><img src="/template/img/preloader.gif" alt="loader"></div>
   				  <br />
@@ -292,6 +292,8 @@ if (isset($_POST['goods_change'])) {
 			if (!mysqli_query($db,$query)) {mysqli_error($db);} 
 		}
 	}
+  header("Location: /admin/goods?goods_edit=$product_url");
+  exit();
 }
 
 #################################################
@@ -315,7 +317,7 @@ if (empty($_GET) AND empty($_POST)) { ?>
 	Удалить товар: <i class="fi-minus"></i>
 	<form action="">
 		<input type="text" name="goods_del"  placeholder="Введите url товара">
-		<input type="submit" value="Удалить" class="button" onclick="return confirm('Уверены?')">
+		<input type="submit" value="Удалить" class="button alert" onclick="return confirm('Уверены?')">
 	</form>
 <?php } ?>
 

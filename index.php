@@ -162,6 +162,8 @@ foreach ($routes as $map)
         $module = $map['class'];
         $action = $map['method'];
 
+        
+
         break;
     } 
             
@@ -172,7 +174,6 @@ $arr_url = explode('/',$url_path);
 //print_arr($arr_url);
 $url  = $arr_url['0']; //Если совпадения не найдены, то этот url пойдет в контроллер по умолчанию
 if (empty($url)) $url = "/";
-
 
 
 
@@ -235,6 +236,58 @@ echo build_cat_tree($cat_tree,0);
 $cat_menu = ob_get_contents();   
 ob_end_clean();  
 ############ Генерируем боковое меню каталога #########
+#
+#
+##############################################################################
+#Breadcrumb
+        //echo $module;
+        //echo $params['cat_url'];
+        //print_arr($cat_tree);
+
+
+
+#Массив категорий
+if ($result = mysqli_query($db, "SELECT id,url,name,parent_id FROM main WHERE catalog='1'")) {
+    if (mysqli_num_rows($result) > 0) {
+        $cats_rubric = array();
+        while($cat =  mysqli_fetch_assoc($result)){
+            $cats_rubric[$cat['parent_id']][] =  $cat;
+        }
+    }
+    //print_arr($cats_rubric);
+} 
+#Массив категорий
+
+
+
+
+        #строим массив с breadcrumbs
+        function path($cats_rubric,$cat_id) {
+            $path = array();
+            global $path;
+                foreach ($cats_rubric as $key => $value) {
+
+                  foreach ($value as $key => $value2) {
+                    
+                    if ($value2['id']==$cat_id) {
+                        //print_arr($value2);
+                      $path[$value2['url']] = $value2['name'];
+                      path($cats_rubric,$value2['parent_id']);
+                    }
+                  }
+            
+                }
+            return($path);     
+        }
+        
+
+        $query = "SELECT * FROM main WHERE url='{$params['cat_url']}'";
+        //echo $query;
+        $result = mysqli_query($db, $query);
+        $row = mysqli_fetch_assoc($result);
+        $id = $row['id'];
+        path($cats_rubric,$id);
+        print_arr($path);
 
 
 ################# CONTENT OLD #################

@@ -76,12 +76,13 @@
         </aside>
         <div class="large-9 columns">
             <article>
-                <ul class="breadcrumbs">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">Gene Splicing</a></li>
-                    <li class="current"><a href="#">Cloning</a></li>
-                </ul>
+                
+                <?php if (isset($breadcrumbs) AND !empty($breadcrumbs)) { ?>
+                    <ul class="breadcrumbs">
+                    <?php echo $breadcrumbs; ?>
+                </ul>    
+                <?php } ?>
+                
 
                 <?php
                 echo $content;

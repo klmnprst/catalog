@@ -239,7 +239,8 @@ ob_end_clean();
 #
 #
 ##############################################################################
-#Breadcrumb
+#                              breadcrumbs                                   #
+##############################################################################
         //echo $module;
         //echo $params['cat_url'];
         //print_arr($cat_tree);
@@ -255,39 +256,91 @@ if ($result = mysqli_query($db, "SELECT id,url,name,parent_id FROM main WHERE ca
         }
     }
     //print_arr($cats_rubric);
+    
 } 
 #Массив категорий
 
-
-
-
-        #строим массив с breadcrumbs
-        function path($cats_rubric,$cat_id) {
-            $path = array();
-            global $path;
-                foreach ($cats_rubric as $key => $value) {
-
-                  foreach ($value as $key => $value2) {
-                    
-                    if ($value2['id']==$cat_id) {
-                        //print_arr($value2);
-                      $path[$value2['url']] = $value2['name'];
-                      path($cats_rubric,$value2['parent_id']);
-                    }
-                  }
-            
+    #строим массив с breadcrumbs
+    function path($cats_rubric,$cat_id) {
+        $path = array();
+        global $path;
+            foreach ($cats_rubric as $key => $value) {
+              foreach ($value as $key => $value2) {
+                if ($value2['id']==$cat_id) {
+                    //print_arr($value2);
+                  $path[$value2['url']] = $value2['name'];
+                  path($cats_rubric,$value2['parent_id']);
                 }
-            return($path);     
-        }
+              }
         
+            }
+        return($path);     
+    }
+    ######################################
+    if (isset($module) AND $module == 'product') {
+        if (!empty($params['product_url'])) {
+            $query = "SELECT product.name, product.cat_id, main.url
+            FROM  `product` 
+            LEFT JOIN  `main` ON (main.id = product.cat_id) 
+            WHERE `product_url` =  '{$params['product_url']}'";
+            //echo $query;
+            $result = mysqli_query($db, $query);
+            $row = mysqli_fetch_assoc($result);
+            $product = $row['name'];
+            $cat_url = $row['url'];
+        }
+         
+    }
 
-        $query = "SELECT * FROM main WHERE url='{$params['cat_url']}'";
+
+    if (isset($params['cat_url'])) {
+        $cat_url = $params['cat_url']; 
+    }
+    if (isset($cat_url)) {
+        $query = "SELECT * FROM main WHERE url='$cat_url'";
         //echo $query;
         $result = mysqli_query($db, $query);
         $row = mysqli_fetch_assoc($result);
         $id = $row['id'];
         path($cats_rubric,$id);
-        print_arr($path);
+
+        
+        $path = array_reverse($path); //перевернем массив
+            if (isset($product)) {
+            //array_push($path, '', $product);
+            $path[' '] = $product;
+            //print_arr($path);
+        }
+        //print_arr($path);  
+    }
+                  
+               
+    
+
+
+
+
+
+
+    if (isset($path) AND !empty($path)) {
+        $breadcrumbs = '';
+        $total = count($path);
+        $counter = 0;
+        foreach ($path as $key => $value) {
+            $counter++;
+            if($counter == $total){
+              $breadcrumbs .='<li class="current">' . $value . '</li>';
+            }
+            else{
+              $breadcrumbs .='<li><a href="/cat/' . $key . ' "> ' . $value . '</a></li>';
+            }
+            
+        }
+    }
+    
+##############################################################################
+#                              breadcrumbs                                   #
+##############################################################################
 
 
 ################# CONTENT OLD #################
